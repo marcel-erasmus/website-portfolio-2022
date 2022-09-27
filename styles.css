@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+:root {
+    --padding-default: 15px;
+
+    --border-thickness-default: 2px;
+    --border-radius: 0.3rem;
+
+    --main-width: 1000px;
+
+    --shadow: 4px 4px 10px #221e1e;
+
+    --body-background-color: #181c25;
+    --body-color: #ffffff;
+
+    --theme-background-color: #2a2e35;
+    --theme-color: #ffffff;
+
+    --title-color: #e3b104;
+
+    --mood-positive-color: #27793f;
+    --mood-negative-color: #9c2c2c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+}
+
+body, button, input, textarea {
+    font-family: 'Reggae One';
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+
+#main {
+    width: var(--main-width);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+}
+
+button {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
+    max-width: 400px;
+    background-color: transparent;
+    color: var(--theme-color);
+    border: solid #ffffff 1px;
+    border-radius: var(--border-radius-default);
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.button-positive {
+    border: solid var(--mood-positive-color) 2px;
+}
+
+.button-positive:hover {
+    background-color: var(--mood-positive-color);
+}
+
+.button-negative {
+    border: solid var(--mood-negative-color) 2px;
+}
+
+.button-negative:hover {
+    background-color: var(--mood-negative-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container-padded > * {
+    margin-bottom: 30px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 100vh;
+    min-height: 500px;
+}
